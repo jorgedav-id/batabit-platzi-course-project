@@ -162,8 +162,14 @@ main {
     column-gap: 3px;
 }
 
+.stats-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .stats-table {
     display: flex;
+    min-width: 230px;
     max-width: 270px;
     flex-direction: column;
     margin-top: 6px;
@@ -219,10 +225,10 @@ main {
 }
 
 .stats-info__arrow {
-    flex: 1 0 auto;
     width: 24px;
     height: 24px;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .arrow--rigth {
@@ -231,6 +237,7 @@ main {
 }
 
 .stats__update-info {
+    align-self: center;
     padding: 10px 10px;
     margin-top: 20px;
     height: 40px;
@@ -266,5 +273,103 @@ main {
 
 /** seccion - service-features **/
 .service-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding-top: 65px;
+    background-color: var(--warm-black);
+}
+
+.features-header {
+    max-width: 280px;
+    text-align: center;
+}
+
+.features-header__title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.features-header__subtitle {
+    margin-top: 24px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #808080;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-top: 32px;
+    padding-bottom: 15px;
+    max-width: 280px;
+}
+
+.feature-card {
+    padding: 14px 16px;
+    border-radius: 4px;
     background-color: var(--warm-black-1);
+    box-shadow: 1px 2px 2px #2c2c2c;
+}
+
+.feature-card__icon {
+    width: 24px;
+    height: 24px;
+    padding: 5px 15px 5px 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.feature-card__icon--clock {
+    background-image: url('/assets/icons/clock-1.svg');
+}
+
+.feature-card__icon--eye {
+    background-image: url('/assets/icons/eye-1.svg');
+}
+
+.feature-card__icon--dollar {
+    background-image: url('/assets/icons/dollar-sign-1.svg');
+}
+
+.feature-card__icon--check {
+    background-image: url('/assets/icons/check-circle-1.svg');
+}
+
+.feature-card__title {
+    margin: 10px 0;
+    color: var(--just-white);
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+.feature-card__description {
+    color: #808080;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.features-background {
+    width: 100%;
+    height: 387px;
+    max-height: 387px;
+    background-image: url('/assets/images/bitcoinbaby-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.features-background__title {
+    margin-top: 70px;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--just-white);
 }
