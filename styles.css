@@ -252,6 +252,7 @@ main {
 .rates-section__icon {
     position: absolute;
     bottom: -11px;
+    left: calc(50% - 20px);
     background-image: url('/assets/images/betabit-only-logo.svg');
     width: 41px;
     height: 24px;
@@ -308,7 +309,7 @@ main {
     flex-direction: column;
     row-gap: 15px;
     margin-top: 32px;
-    padding-bottom: 15px;
+    padding-bottom: 50px;
     max-width: 280px;
 }
 
