@@ -152,12 +152,20 @@ main {
     color: #757575;
 }
 
+.main-tables-container {
+    display: flex;
+    padding: 0 8px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+}
+
 .main-currency-table {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
-    height: 360px;
-    margin: 0 auto;
+    height: 320px;
+    scroll-snap-align: center;
 }
 
 .main-currency-table .main-currency-table__title {
